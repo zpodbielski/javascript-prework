@@ -1,13 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
 	<meta charset="UTF-8">
 	<title>Kamień, papier, nożyce</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Biryani&family=Lato:wght@400;700;900&family=Questrial&display=swap" rel="stylesheet">
+
 </head>
 <body>
 	<div class="container">
-		<div id="buttons"></div>
+		<h2>Zagraj w</h2>
+		<h1 class="header-title">Kamień, Papier, Nożyce!</h1>
+		<p>W klasycznej wersji gry "Kamień, Papier, Nożyce" gracze stają naprzeciwko siebie z jedną ręką za plecami. Na umówiony sygnał pokazują dłonią wybrany znak. Kamień - dłoń zwinięta w pięść, papier  - wyprostowana dłoń, nożyce - palce środkowy i wskazujący tworzą nożyce, pozostałe palce są żłożone. Kamień tępi nożyczki, Nożyczki tną papier, papier owija kamień. Przykładowo, jeśli Ty wybierzesz kamień, a przeciwnik wybierze nożyczki - wygrywasz. W mojej wersji gry grasz z komputerem, a dokładniej, z algorytmem, który losowo wybiera swój ruch. Aby wykonać Twój ruch musisz nacisnąć jeden z trzech przycisków.</p>
+		<h2> Grasz?</h2>
+		<h1>Do dzieła!</h1>
+		<div id="buttons">
+			<button type="button" id="button-rock">Kamień</button>
+			<button type="button" id="button-paper">Papier</button>
+			<button type="button" id="button-scissors">Nożyce</button>
+		</div>
 		<div id="messages"></div>
 	</div>
 	<script src="js/functions.js"></script>
