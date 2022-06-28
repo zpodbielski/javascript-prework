@@ -3,7 +3,7 @@ function buttonClicked(argButtonName) {
 
   var randomNumber = Math.floor(Math.random() * 3 + 1);
   var computerMove = getMoveName(randomNumber);
-  
+
   displayResult(playerMove, computerMove);
 }
 
@@ -17,7 +17,7 @@ function getMoveName(argMoveId) {
   }
 }
 
-ffunction displayResult(argPlayerMove, argComputerMove) {
+function displayResult(argPlayerMove, argComputerMove) {
   if (
     argPlayerMove == 'papier' && argComputerMove == 'kamień'
     || argPlayerMove == 'kamień' && argComputerMove == 'nożyce'
@@ -29,7 +29,7 @@ ffunction displayResult(argPlayerMove, argComputerMove) {
   } else {
     printMessage('Przegrywasz :(');
   }
-    printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
+  printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 }
 
 var buttonRock = document.getElementById('button-rock');
