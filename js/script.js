@@ -4,7 +4,7 @@ function buttonClicked(argButtonName) {
   var randomNumber = Math.floor(Math.random() * 3 + 1);
   var computerMove = getMoveName(randomNumber);
 
-  displayResult(playerMove, computerMove);
+  displayResult(argButtonName, computerMove);
 }
 
 function getMoveName(argMoveId) {
